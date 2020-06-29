@@ -1,0 +1,88 @@
+body {
+    font-family: 'Avenir', sans-serif;
+    background-image: url("sky.jpg");
+	background-size: cover;
+}
+
+h1 {
+	position: absolute;
+	top: 34%;
+	left: 37%;
+	font-size: 75px;
+}
+
+h1.wiggle {
+  display: inline-block;
+  animation: wiggle 2.5s infinite;
+}
+
+h1:hover {
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform: rotate(10deg);}
+  25% {-webkit-transform: rotate(-10deg);}
+  50% {-webkit-transform: rotate(20deg);}
+  75% {-webkit-transform: rotate(-5deg);}
+  100% {-webkit-transform: rotate(0deg);}
+}
+
+@-ms-keyframes wiggle {
+  0% {-ms-transform: rotate(1deg);}
+  25% {-ms-transform: rotate(-1deg);}
+  50% {-ms-transform: rotate(1.5deg);}
+  75% {-ms-transform: rotate(-5deg);}
+  100% {-ms-transform: rotate(0deg);}
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.wrapper {
+  overflow: hidden;
+  background-image: url("sky.jpg");
+	background-size: cover;
+	position: fixed; 
+    overflow-y: scroll;
+    font-family: 'Avenir', sans-serif;
+}
+
+#cloud { 
+    height: auto; 
+    width: auto; 
+    max-width: 20%; 
+    max-height: 20%;
+    overflow: hidden;
+	position: fixed; 
+    overflow-y: scroll;
+}
+.cloud {
+	position: absolute;
+	top: 20%;
+ 	animation: slide 90s linear infinite;
+ 	overflow: hidden;
+	position: fixed; 
+    overflow-y: scroll;
+}
+
+@keyframes slide {
+  0%{
+    transform: translate3d(3600, 0, 0);
+  }
+  100%{
+    transform: translate3d(-2075px, 0, 0);
+  }
+}
