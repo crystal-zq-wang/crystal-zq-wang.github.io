@@ -1,0 +1,204 @@
+body {
+  background-image: url("night3.jpg");
+  background-size: cover;
+  font-family: 'Avenir', sans-serif;
+  font-color: white;
+}
+
+h1 {
+	position: absolute;
+	top: 34%;
+	left: 37%;
+	font-size: 75px;
+  color: white;
+  text-shadow: 2px 2px 4px pink;
+}
+
+h1.wiggle {
+  display: inline-block;
+  animation: wiggle 2.5s infinite;
+}
+
+h1:hover {
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform: rotate(10deg);}
+  25% {-webkit-transform: rotate(-10deg);}
+  50% {-webkit-transform: rotate(20deg);}
+  75% {-webkit-transform: rotate(-5deg);}
+  100% {-webkit-transform: rotate(0deg);}
+}
+
+@-ms-keyframes wiggle {
+  0% {-ms-transform: rotate(1deg);}
+  25% {-ms-transform: rotate(-1deg);}
+  50% {-ms-transform: rotate(1.5deg);}
+  75% {-ms-transform: rotate(-5deg);}
+  100% {-ms-transform: rotate(0deg);}
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-5deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.wrapper {
+  overflow: hidden;
+  background-image: url("sky.jpg");
+	background-size: cover;
+	position: fixed; 
+    overflow-y: scroll;
+    font-family: 'Avenir', sans-serif;
+}
+
+#cloud { 
+    overflow: hidden;
+	 position: fixed; 
+    overflow-y: scroll;
+}
+.cloud {
+	position: absolute;
+	top: 0%;
+ 	animation: slide 90s linear infinite;
+ 	overflow: hidden;
+	position: fixed; 
+    overflow-y: scroll;
+}
+
+.cloud-img {
+  width: 2560px;
+  height: 1371px;
+  transform: rotate(180deg);
+}
+
+.moonlight {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  margin-top: 0px;
+}
+
+.moonlight-img {
+  max-height: 300px;
+}
+
+.moonlight.wiggle {
+  display: inline-block;
+  animation: wiggle 2.5s infinite;
+}
+
+.moonlight:hover {
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#directory {
+  text-align: left;
+  margin-left: 40px;
+  font-size: 28px;
+  padding-top: 30px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  line-height: 75px;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+a:link {
+  text-decoration: none;
+  text-shadow: 2px 2px 4px pink;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  background-position: left bottom;
+}
+
+a:active {
+  text-decoration: none;
+  color: #FFD700;
+}
+
+.github {
+  margin-left:36px;
+
+}
+
+.octocat {
+  margin-left:30px;
+  margin-top: 205px;
+  left: 10%;
+}
+
+.octocat-img {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+@keyframes slide {
+  0%{
+    transform: translate3d(3600, 0, 0);
+  }
+  100%{
+    transform: translate3d(-2400px, 0, 0);
+  }
+}
