@@ -3,6 +3,7 @@ body {
   background-size: cover;
   font-family: 'Avenir', sans-serif;
   font-color: white;
+  animation: fadein 2s linear 1;
 }
 
 h1 {

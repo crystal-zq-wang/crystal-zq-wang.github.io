@@ -2,6 +2,7 @@ body {
     font-family: 'Avenir', sans-serif;
     background-image: url("sky.jpg");
 	background-size: cover;
+  animation: fadein 2s linear 1;
 }
 
 h1 {

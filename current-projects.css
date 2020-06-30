@@ -1,5 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-	background: url("skyfinal.png");
+	background: url("sky.jpg");
+  background-size: cover;
 	font-family: 'Avenir', sans-serif; 
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
    -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -7,6 +12,8 @@ body {
      -o-animation: fadein 2s; /* Opera < 12.1 */
         animation: fadein 2s;
 }
+
+
 
 h1 {
 	font-size: 75px;
@@ -55,6 +62,9 @@ p:hover span{
 	font-size: 40px;
 	line-height: 100px;
 	margin-top: -80px;
+  margin-left: 300px;
+  position: absolute;
+  padding-top: 80px;
 }
 
 #directory {
@@ -62,7 +72,7 @@ p:hover span{
   margin-left: 40px;
   font-size: 35px;
   padding-top: 30px;
-  position: absolute;
+  position: fixed;
   top: 0%;
   left: 0%;
   line-height: 75px;
@@ -71,30 +81,41 @@ p:hover span{
 
 .octocat {
 	margin-left: 35px;
+  position: fixed;
 }
 
 .octocat-img {
 	max-height: 35px;
   max-width: 35px;
+  position: fixed;
 }
 
 #octocat {
 	margin-left: 35px;
 	margin-right: 0px;
+  position: fixed;
 }
 
 #HiddenText {
     display: none;
-    position: relative;
+    position: fixed;
     font-size:25px;
     margin-left: 55px;
-    margin-top:-40px;
+    margin-top:0px;
 }
 
 #octocat:hover #HiddenText {
     display:block;
 }
 
+#translate {
+  height: 100vh;
+  margin-top: 100vh;
+}
+
+#vatt {
+  height: 100vh;
+}
 
 a:link {
 	text-decoration: none;
@@ -104,8 +125,9 @@ a:hover {
 	text-decoration: none;
 }
 
-h2:hover {
-	display:block;
+h2 {
+	text-align: center;
+  position: relative;
 }
 
 a:active {
@@ -114,6 +136,7 @@ a:active {
 
 a:visited {
 	text-decoration: none;
+  color: black;
 }
 
 @keyframes fadein {
