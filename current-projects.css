@@ -13,14 +13,28 @@ body {
         animation: fadein 2s;
 }
 
+.subtitle {
+  left: 0;
+  font-size:30px;
+    line-height: 200px;
+    margin-top: -80px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
 
 
 h1 {
-	font-size: 75px;
-	text-align: center;
-	align-items: center;
-	margin-left: 0px;
-	padding-left: 0px;
+	font-size: 68px;
+  left: 0;
+    line-height: 200px;
+    margin-top: -180px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+
 }
 
 span{
@@ -58,13 +72,13 @@ p:hover span{
 
 
 #projects {
-	text-align: left;
-	font-size: 40px;
-	line-height: 100px;
-	margin-top: -80px;
-  margin-left: 300px;
-  position: absolute;
-  padding-top: 80px;
+	text-align: right;
+  align-items: right;
+	font-size: 25px;
+	line-height: 75px;
+	right: 3%;
+  top:3%;
+  position: fixed;
 }
 
 #directory {
@@ -79,42 +93,54 @@ p:hover span{
 
 }
 
-.octocat {
-	margin-left: 35px;
+.octo {
+  margin-left: 35px;
   position: fixed;
+  top: 28%;
 }
-
-.octocat-img {
-	max-height: 35px;
+.octo-img {
+  max-height: 35px;
   max-width: 35px;
-  position: fixed;
-}
-
-#octocat {
-	margin-left: 35px;
-	margin-right: 0px;
-  position: fixed;
 }
 
 #HiddenText {
     display: none;
-    position: fixed;
     font-size:25px;
     margin-left: 55px;
-    margin-top:0px;
+    margin-top: 300px;
+    position:fixed;
+    color:green;
 }
 
-#octocat:hover #HiddenText {
+.octo:hover #HiddenText {
     display:block;
 }
 
 #translate {
   height: 100vh;
   margin-top: 100vh;
+  font-size: 25px;
 }
 
 #vatt {
   height: 100vh;
+  font-size: 25px;
+}
+
+
+#nlp {
+  height: 100vh;
+  font-size: 25px;
+}
+
+#novel {
+  height: 100vh;
+  font-size: 25px;
+}
+
+#language-diaries {
+  height: 100vh;
+  font-size: 25px;
 }
 
 a:link {
