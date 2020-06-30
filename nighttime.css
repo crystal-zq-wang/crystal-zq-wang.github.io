@@ -178,21 +178,6 @@ a:active {
   color: #FFD700;
 }
 
-.github {
-  margin-left:36px;
-
-}
-
-.octocat {
-  margin-left:30px;
-  margin-top: 205px;
-  left: 10%;
-}
-
-.octocat-img {
-  max-height: 30px;
-  max-width: 30px;
-}
 
 @keyframes slide {
   0%{

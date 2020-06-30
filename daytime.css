@@ -90,22 +90,6 @@ h1:hover {
   height: 100vh;
 }
 
-.sunray.wiggle {
-  display: inline-block;
-  animation: wiggle 2.5s infinite;
-}
-
-.sunray:hover {
-  -webkit-animation-name: wiggle;
-  -ms-animation-name: wiggle;
-  -ms-animation-duration: 1000ms;
-  -webkit-animation-duration: 1000ms;
-  -webkit-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-}
-
 #directory {
   text-align: left;
   margin-left: 40px;
@@ -132,25 +116,6 @@ a:hover {
 
 a:active {
   text-decoration: none;
-}
-
-.github {
-    margin-left:36px;
-}
-
-.octocat {
-  margin-left:30px;
-  margin-top: 205px;
-}
-
-.octocat-img {
-  max-height: 30px;
-  max-width: 30px;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-   -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-     -o-animation: fadein 2s; /* Opera < 12.1 */
-        animation: fadein 2s;
 }
 
 @keyframes rotation {
